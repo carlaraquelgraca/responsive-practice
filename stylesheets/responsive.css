@@ -1,61 +1,64 @@
-body
-{
-	font-size:13px;
-	line-height: 1.2em;	
+body{
+	font-size:100%;
+	line-height: 1.5em;	
+	
 }
 
 
 h1{
-	font-size:2.285em;
+	font-size:2em;
+}
+
+p{
+	color: #696969;
 }
 
 h5{
 	font-size:1em;
 }
 
-article{
-	margin-top: 2em;
-    width: 80%; 
-    margin: 0 auto;
+section{	
+	margin: 0 1.2em;
 }
 
-header img {
+article{
+	text-align:center;
+}
+
+img {
     max-width: 100%; 
     height: auto; 
 }
 
-.centered-text
-{	
-
-	text-align: center;
+@media (max-width: 22em) {
+   body {
+      font-size: .9em;
+      padding: 0 1.5em;
+    }
 }
 
-@media only screen and (min-width: 30em)
-{
+@media only screen and (min-width: 34em){
 	body{
-		font-size:16px;
-		line-height:1.5em;
-
+		line-height:1.4em;
 	}
 
 	h1{
-	font-size:2em;
+	font-size:1.8em;
 	}
 
-	h5{
-	font-size:0.7em;
-	}
-
-	p{
-	font-size:1em;
+	section{
+	margin: 6em 2em;
 	}
 
 
-	article{
-	display:inline-block;	
-	width:80%;
-	text-align: center;
-	
-}
+	.imgs{
+	display:inline-block;
+	vertical-align: top;	
+	width:40%;
+	margin: 0 1.5em;
+
+	}
+
+
 
 }
