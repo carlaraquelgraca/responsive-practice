@@ -1,25 +1,34 @@
-body{
-	font-size:100%;
-	line-height: 1.5em;	
-	
+
+article, aside, body, div, figcaption, figure, form, h1, h2, h3, h4, html, 
+img, label, li, nav, p, span, strong, ul {
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background: 0 0;
 }
 
+body{
+	line-height: 1.5em;	
+	font-family: "Proxima Nova Regular","Segoe UI","Roboto","Droid Sans","Helvetica Neue",Arial,sans-serif;	
+}
 
 h1{
-	font-size:2em;
+	font-size:1.8em;
+
 }
 
 p{
 	color: #696969;
+	margin: 2.5em 2em;
 }
 
 h5{
 	font-size:1em;
 }
 
-section{	
-	margin: 0 1.2em;
-}
 
 article{
 	text-align:center;
@@ -30,11 +39,20 @@ img {
     height: auto; 
 }
 
-@media (max-width: 22em) {
-   body {
-      font-size: .9em;
+.imgs{
+	margin-top: 2em;
+}
+
+@media (max-width: 22em) {/*minor breakpoint*/
+   	body {
+      font-size: .8em;
       padding: 0 1.5em;
     }
+
+    h1{
+	font-size:1.6em;
+	}
+
 }
 
 @media only screen and (min-width: 34em){
@@ -42,23 +60,34 @@ img {
 		line-height:1.4em;
 	}
 
-	h1{
-	font-size:1.8em;
-	}
-
-	section{
-	margin: 6em 2em;
-	}
-
-
 	.imgs{
 	display:inline-block;
 	vertical-align: top;	
-	width:40%;
-	margin: 0 1.5em;
-
+	width:49.5%;
 	}
 
+	p{
+	margin: 2.5em 0.8em;
+	}
 
+	article{
+		padding: 2em 1em;
+	}
+
+}
+
+
+@media only screen and (min-width: 51em){
+	h1{
+	font-size:2.4em;
+	}
+
+	article p{
+		font-size: 1.125em;
+	}
+
+	article{
+		padding: 2em 4em;
+	}
 
 }
