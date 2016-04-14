@@ -11,27 +11,41 @@ img, label, li, nav, p, span, strong, ul {
 }
 
 body{
-	line-height: 1.5em;	
 	font-family: "Proxima Nova Regular","Segoe UI","Roboto","Droid Sans","Helvetica Neue",Arial,sans-serif;	
+	line-height: 1.484;	
 }
 
 h1{
-	font-size:1.8em;
+	font-size:4em;/*Modular scale: 1:2*/
 
+}
+
+h2{
+	font-size:2.969em;
+}
+
+h3{
+	font-size:2em;
+		letter-spacing: 0.06em;
+}
+
+h4{
+	font-size:1.484em;
+}
+
+small { 
+	font-size: 0.5em;
 }
 
 p{
+	font-size: 1em;
 	color: #696969;
-	margin: 2.5em 2em;
-}
-
-h5{
-	font-size:1em;
 }
 
 
 article{
 	text-align:center;
+	padding: 5% 10%;
 }
 
 img {
@@ -44,34 +58,27 @@ img {
 }
 
 @media (max-width: 22em) {/*minor breakpoint*/
+   	
    	body {
-      font-size: .8em;
-      padding: 0 1.5em;
+      font-size: .9em;
     }
 
-    h1{
-	font-size:1.6em;
-	}
+    h3{
+   		font-size:1.484em;
+   	}
+
+
 
 }
 
 @media only screen and (min-width: 34em){
-	body{
-		line-height:1.4em;
-	}
 
 	.imgs{
-	display:inline-block;
+	display:inline-block;	
 	vertical-align: top;	
-	width:49.5%;
-	}
-
-	p{
-	margin: 2.5em 0.8em;
-	}
-
-	article{
-		padding: 2em 1em;
+	width:45.5%;
+	margin-left: -5px;
+	margin: 0 2%;
 	}
 
 }
@@ -82,12 +89,10 @@ img {
 	font-size:2.4em;
 	}
 
-	article p{
+	p{
 		font-size: 1.125em;
 	}
 
-	article{
-		padding: 2em 4em;
-	}
+
 
 }
