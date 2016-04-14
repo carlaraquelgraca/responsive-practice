@@ -8,6 +8,7 @@ img, label, li, nav, p, span, strong, ul {
     outline: 0;
     border: 0;
     background: 0 0;
+    
 }
 
 body{
@@ -45,7 +46,7 @@ p{
 
 article{
 	text-align:center;
-	padding: 5% 10%;
+	padding: 5% 5%;
 }
 
 img {
@@ -67,11 +68,26 @@ img {
    		font-size:1.484em;
    	}
 
+}
 
+
+@media only screen and (min-width: 38em){
+
+	article{
+		padding: 5% 15%;
+	}
+
+	p{
+		font-size: 1.125em;
+	}
 
 }
 
-@media only screen and (min-width: 34em){
+@media only screen and (min-width: 51em){
+
+	article{
+	padding: 5% 5%;
+	}
 
 	.imgs{
 	display:inline-block;	
@@ -79,20 +95,10 @@ img {
 	width:45.5%;
 	margin-left: -5px;
 	margin: 0 2%;
-	}
-
-}
-
-
-@media only screen and (min-width: 51em){
-	h1{
-	font-size:2.4em;
-	}
+	}	
 
 	p{
 		font-size: 1.125em;
 	}
-
-
 
 }
